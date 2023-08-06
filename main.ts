@@ -11,10 +11,12 @@ function setPIDConstants (proportional: number, integralConstant: number, deriva
     Ki = integralConstant
     Kd = derivative
 }
+
 function resetPID () {
     integral = 0
     previousError = 0
 }
+
 function computePID (setPoint: number, measuredValue: number) {
     error = setPoint - measuredValue
     integral += error
@@ -22,6 +24,3 @@ function computePID (setPoint: number, measuredValue: number) {
     output = Kp * error + Ki * integral + Kd * derivative
     previousError = error
 }
-basic.forever(function () {
-	
-})
