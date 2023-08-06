@@ -1,0 +1,12 @@
+{
+    "name": "microbit-pid-controller",
+    "version": "0.0.1",
+    "description": "A PID controller for the micro:bit",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts"
+    ]
+}
